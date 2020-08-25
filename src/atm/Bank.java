@@ -9,7 +9,6 @@ public class Bank {
 
     public Bank(String name) {
         this.name = name;
-        //this.customers = new ArrayList<>();
         this.dataSource = new DatabaseDataSource();
         this.customers = dataSource.getCustomerData();
     }
