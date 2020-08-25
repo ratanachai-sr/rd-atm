@@ -2,20 +2,20 @@ package atm;
 
 public class Main {
     public static void main(String[] args) {
-        Customer peter = new Customer(1, "Peter", "1234");
-        Customer nancy = new Customer(2, "Nancy", "1234");
-        peter.getAccount().deposit(100);
-        nancy.getAccount().withDraw(100);
-        nancy.getAccount().transfer(peter.getAccount(), 100);
+        //Customer peter = new Customer(1, "Peter", "1234");
+        //Customer nancy = new Customer(2, "Nancy", "1234");
+        //peter.getAccount().deposit(100);
+        //nancy.getAccount().withDraw(100);
+        //nancy.getAccount().transfer(peter.getAccount(), 100);
         //System.out.println(peter);
         //System.out.println(nancy);
-        Customer johndo = new Customer(3, "Johndo", "1234");
+        //Customer johndo = new Customer(3, "Johndo", "1234");
         //System.out.println(johndo);
         //System.out.println(johndo.checkPin("1234"));
-        Bank bank = new Bank("KTB");
-        bank.addCustomer(peter);
-        bank.addCustomer(nancy);
-        bank.addCustomer(johndo);
+        Bank bank = new Bank("KTB", new WebServiceDataSource());
+        //bank.addCustomer(peter);
+        //bank.addCustomer(nancy);
+        //bank.addCustomer(johndo);
         //System.out.println(bank.findCustomer(3));
         System.out.println(bank);
 
@@ -25,6 +25,7 @@ public class Main {
         //atm.transfer(1,20);
         //System.out.println(peter);
         //System.out.println(nancy);
+
 
     }
 }
