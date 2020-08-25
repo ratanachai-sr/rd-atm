@@ -43,4 +43,8 @@ public class Customer {
     public BankAccount getAccount() {
         return account;
     }
+
+    public boolean checkPin(String pin){
+        return this.pin.equals(pin);
+    }
 }
