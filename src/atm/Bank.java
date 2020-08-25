@@ -5,10 +5,13 @@ import java.util.ArrayList;
 public class Bank {
     private String name;
     private ArrayList<Customer> customers;
+    private DataSource dataSource;
 
     public Bank(String name) {
         this.name = name;
-        customers = new ArrayList<>();
+        //this.customers = new ArrayList<>();
+        this.dataSource = new DataSource();
+        this.customers = dataSource.getCustomerData();
     }
 
     public void addCustomer(Customer c){
